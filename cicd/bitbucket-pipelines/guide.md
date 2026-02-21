@@ -392,7 +392,7 @@ Authenticates with an EKS cluster and runs a `kubectl` command:
     AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
     AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
     AWS_DEFAULT_REGION: "ap-southeast-1"
-    CLUSTER_NAME: 'sg-brs-1'
+    CLUSTER_NAME: 'stg-1'
     KUBECTL_COMMAND: 'apply'
     RESOURCE_PATH: bind/deploy.yml
 ```
@@ -409,9 +409,9 @@ Same concept, but for Google Kubernetes Engine:
 - pipe: atlassian/google-gke-kubectl-run:3.5.0
   variables:
     KEY_FILE: $GCP_KEY_BASE64
-    PROJECT: 'kirk-1588691722895'
+    PROJECT: 'kirk-key'
     COMPUTE_ZONE: 'asia-southeast1'
-    CLUSTER_NAME: 'wisdom-k8s-cluster-1'
+    CLUSTER_NAME: 'k8s-cluster-1'
     KUBECTL_COMMAND: 'apply'
     RESOURCE_PATH: api/deploy-gcp.yml
 ```
